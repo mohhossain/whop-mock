@@ -1,0 +1,82 @@
+.Navbar{
+    background-color: FFFFFF;
+    height: 70px;
+    width: 100%;
+    display: flex; 
+}
+
+.Navbar .leftNav{
+    flex: 10%;
+    text-align: center;
+    justify-content: center;
+}
+
+.Navbar .middleNav{
+    flex: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middleNav input{
+    height: 55px;
+    width: 67vw;
+    margin: 20px;
+    border-radius: 8px;
+    padding-left: 15px;
+    border-color: rgb(221, 217, 217);
+}
+
+.Navbar .rightNav{
+    flex: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.rightNav a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+}
+
+.rightNav button{
+    display: none;
+    margin-right: 20px;
+}
+
+.rightNav #hidden{
+    display: flex;
+}
+
+.UserIcon{
+    height: 30px;
+    width: 30px;
+    color: grey;
+}
+
+.Navbar .leftNav .logo{
+    height: 25px;
+    padding-top: 25px;
+
+}
+
+@media only screen and (max-width: 991px){
+    .rightNav a{
+        display: none;
+    }
+
+    .rightNav button{
+        display: flex;
+    }
+
+    .rightNav #hidden{
+        position: absolute;
+        height: 500px;
+        background-color: hotpink;
+    }
+}
