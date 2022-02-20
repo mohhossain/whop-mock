@@ -5,7 +5,7 @@ import {FaSearch, FaRegUserCircle, FaBars} from "react-icons/fa";
 
 function Navbar(){
 
-    const [showDropdown, setShowDropDowns] = useState(true);
+    const [showDropdown, setShowDropdown] = useState(false);
 
     return(
         <div className="Navbar">
@@ -20,7 +20,7 @@ function Navbar(){
             </div>
 
             <div className="rightNav" >
-                <div id={setShowDropDowns ? "hidden" : ""}>
+                <div className="links" id={showDropdown ? "hidden" : ""}>
                 <a href="/">Explore</a>
                 <a href="/">Resources</a>
                 <a href="/">
@@ -30,8 +30,8 @@ function Navbar(){
                 </div>
                 
 
-                <button >
-                    <FaBars></FaBars>
+                <button onClick={()=> setShowDropdown(!showDropdown)}>
+                    <FaBars className="collapseButton"></FaBars>
                 </button>
                 
             </div>

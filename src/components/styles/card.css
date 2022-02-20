@@ -1,0 +1,90 @@
+.card{
+    height: 401px;
+    width: 304px;
+    border: .5px solid rgb(230, 229, 229);
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px rgb(173, 173, 173);
+}
+
+
+
+.cover{
+    object-fit: cover;
+}
+
+.cover img{
+    height: 140px;
+    width: 305px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dp img{
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transform: translate(120px, -35px);
+}
+
+.name{
+    text-align: center;
+    margin-top: -50px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.priceUsers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.price{
+    margin-top: -15px;
+    font-weight: bold;
+}
+
+.users{
+    margin-top: -15px;
+    color: gray;
+
+}
+
+.description{
+    justify-content: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button1 button{
+    text-align: center;
+    width: 290px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: grey;
+    cursor: pointer;
+    border: 1px solid grey;
+    transition-duration: 0.4s;
+}
+
+.button1 button:hover{
+    background-color: black;
+    color: white;
+}
