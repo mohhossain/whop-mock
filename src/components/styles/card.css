@@ -25,16 +25,20 @@
 }
 
 .dp img{
+    position: relative;
     height: 68px;
     width: 68px;
     border-radius: 50%;
     border: 3px solid white;
-    transform: translate(120px, -35px);
+    margin-left: 40%;
+    margin-bottom: 10%;
+    margin-top: -15%;
+    /* transform: translate(120px, -35px); */
 }
 
 .name{
     text-align: center;
-    margin-top: -50px;
+    margin-top: -40px;
     font-size: 20px;
     margin-bottom: 0px;
     font-weight: bold;
@@ -87,4 +91,26 @@
 .button1 button:hover{
     background-color: black;
     color: white;
+}
+
+@media only screen and (max-width: 950px){
+
+    .card{
+        width: 80%;
+
+
+    }
+    .cover img{
+        width: 100%;
+    }
+
+    .dp img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+   
+
 }

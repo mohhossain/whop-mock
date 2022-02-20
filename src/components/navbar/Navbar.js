@@ -8,7 +8,8 @@ function Navbar(){
     const [showDropdown, setShowDropdown] = useState(false);
 
     return(
-        <div className="Navbar">
+        <div>
+            <div className="Navbar">
             <div className="leftNav">
                 <img className="logo" src={logo} alt='logo'/>
             </div>
@@ -33,10 +34,27 @@ function Navbar(){
                 <button onClick={()=> setShowDropdown(!showDropdown)}>
                     <FaBars className="collapseButton"></FaBars>
                 </button>
-                
             </div>
 
+            
+
         </div>
+        <div className="colNav" id="hiddenNav">
+                <div className="top">
+                    <img className="logo" src={logo} alt='logo'/>
+                    <FaBars className="collapseButton"></FaBars>
+                </div>
+                <div className="bottom">   
+                <form>
+                    <input type="text" name='name'  placeholder="Search"></input>
+                </form>
+
+                </div>
+                
+            </div>
+        </div>
+        
+        
     )
 }
 

@@ -8,10 +8,11 @@ function ChipFilter(){
         <div>
             <Stack direction="row" spacing={1}>
                 {
-                    click?
-                <Chip label="color" color="success" variant="outlined"  /> :
-                <Chip label="Clickable" color="success" variant="outlined" onClick={()=> setClick(!click)} />
+                click?
+                    <Chip label="Filters"  onClick={()=> setClick(!click)}  /> :
+                    <Chip label="Filters" color="success" onClick={()=> setClick(!click)} />
                 }
+                
             </Stack>
         </div>
     )

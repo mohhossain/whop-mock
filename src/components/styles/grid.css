@@ -1,11 +1,71 @@
 .products{
     width: 100vw;
     display: flex;
-    height: 100px;
-    background-color: aqua;
+    
+    
 }
 
 .products .leftDiv{
     flex: 30%;
     border-right: 1px solid rgb(175, 175, 175);
 }
+
+.products .rightDiv{
+    flex: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#grid{
+    margin-left: 20px;
+}
+
+.filterButton{
+    background-color: #FF7043;
+    width: 80%;
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    height: 40px;
+    position: fixed;
+    position: fixed;
+    bottom: -24px;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+@media only screen and (max-width: 1250px){
+    .products .leftDiv{
+        flex: 0%;
+        display: none;
+    }
+
+    .products .rightDiv{
+        flex: 100%;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    .filterButton{
+         display: flex;
+         text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    #cards{
+        width: 70%
+    }
+    
+}
+

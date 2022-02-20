@@ -3,12 +3,12 @@ import "../styles/card.css"
 import {FaUser} from "react-icons/fa";
 
 
-function Card(){
+function Cards(){
 
-    const [name, setName] = useState("name");
-    const [price,setPrice] = useState("price");
-    const [users, setUsers] = useState("users");
-    const [description, setDescription] = useState("description");
+    const [name, setName] = useState("Name");
+    const [price,setPrice] = useState("Price");
+    const [users, setUsers] = useState("1-50");
+    const [description, setDescription] = useState("Lorem ipsum dolor sit amet, consectetur adipiscing elit. ");
 
 
     return(
@@ -23,23 +23,23 @@ function Card(){
 
             <div className="name">
                 <p>
-                    Name
+                    {name}
                 </p>
             </div>
 
             <div className="priceUsers">
                 <p className="price">
-                    5.0$ /day
+                    {price} /day
                 </p>
                 <p className="users">
-                    <FaUser></FaUser> 1-50
+                    <FaUser></FaUser> {users}
                 </p>
 
             </div>
 
             <div className="description">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                {description}
                 </p>
             </div>
 
@@ -55,4 +55,4 @@ function Card(){
 
 }
 
-export default Card;
+export default Cards;

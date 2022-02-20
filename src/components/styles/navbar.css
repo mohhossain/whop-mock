@@ -77,6 +77,11 @@
 
 }
 
+.colNav{
+    display: none;
+    height: 20vh;
+}
+
 
 
 @media only screen and (max-width: 1200px){
@@ -104,8 +109,8 @@
     .Navbar .rightNav #hidden{
         position: absolute;
         right: 0px;
-        top: 80px;
-        height: 100%;
+        top: 70px;
+        height: 200px;
         max-height: max-content;
         width: 100%;
         flex-direction: column;
@@ -122,4 +127,46 @@
     }
 
 
+}
+
+@media only screen and (max-width:650px){
+
+    .Navbar{
+        display: none;
+    }
+
+
+
+    .colNav{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        height: 25px;
+        padding-top: 25px;
+        margin-left: 10px;
+    
+    }
+
+    .collapseButton{
+        height: 25px;
+        padding-top: 25px;
+        margin-left: 10px;
+    }
+
+    input{
+        height: 50px;
+        width: 85%;
+        margin: 20px;
+        border-radius: 8px;
+        border-color: rgb(221, 217, 217);
+        margin-left: 7%;
+    }
 }
